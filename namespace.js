@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
 
 
-    var LICH0020 = document.createElement("section");
+    var LICH0020 = document.createElement("div");
     LICH0020.className = "box";
     LICH0020.textContent = "lich0020";
 
