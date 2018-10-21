@@ -5,12 +5,12 @@ function init() {
 
 
     var LICH0020 = document.createElement("div");
-    LICH0020.className = "box";
-    LICH0020.textContent = "lich0020";
-
-    
-    let boxes = document.getElementById("boxes");
-    boxes.appendChild(LICH0020);
+//    LICH0020.className = "box";
+//    LICH0020.textContent = "lich0020";
+//
+//    
+//    let boxes = document.getElementById("boxes");
+//    boxes.appendChild(LICH0020);
 
 
     LICH0020.addEventListener("click", mouseClick);
