@@ -1,35 +1,29 @@
+var LICH0020 = {
+    init: function(){
+    
 
-document.addEventListener("DOMContentLoaded", init);
+    var e = document.createElement("div"); //set var e to create new div
+    e.className = "box";                    //set class to box
+    e.textContent = "lich0020";             //add text to div
+    document.getElementById("boxes").appendChild(e); //get html from css file creating the box. and put it as a child of div
 
-function init() {
-
-
-    var LICH0020 = document.createElement("div");
-//    LICH0020.className = "box";
-//    LICH0020.textContent = "lich0020";
-//
-//    
-//    let boxes = document.getElementById("boxes");
-//    boxes.appendChild(LICH0020);
-
-
-    LICH0020.addEventListener("click", mouseClick);
-    LICH0020.addEventListener("mouseover", mouseOver);
-    LICH0020.addEventListener("mouseout", mouseOut);
+    e.addEventListener("click", mouseClick);  //listening for events
+    e.addEventListener("mouseover", mouseOver);
+    e.addEventListener("mouseout", mouseOut);
 
 }
 
 function mouseClick() {
-    this.style.borderColor = "black";
-    this.style.backgroundColor = "green";
+    this.style.borderColor = "black"; //when clicked border turns black
+    this.style.backgroundColor = "green"; //when clicked fill turns green
 }
 
 function mouseOver(e) {
-    e.target.classList.toggle("highlight");
-
+    e.target.classList.toggle("highlight"); //toggles css highlight when moused over
 }
 
 function mouseOut(e) {
-    e.target.classList.toggle("highlight");
-    e.target.removeAttribute('style');
+    e.target.classList.toggle("highlight"); //toggles css highlight when moused out
+    e.target.removeAttribute('style'); //removes any styling to the box
 }
+
